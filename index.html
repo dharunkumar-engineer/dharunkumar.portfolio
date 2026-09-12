@@ -34,7 +34,6 @@
   a{color:inherit;text-decoration:none;}
   .mono{font-family:'JetBrains Mono', monospace;}
 
-  /* background grid + glow */
   body::before{
     content:"";
     position:fixed;
@@ -67,7 +66,6 @@
     z-index:1;
   }
 
-  /* ---------- nav ---------- */
   nav.topnav{
     position:sticky;
     top:0;
@@ -116,7 +114,6 @@
   }
   @media (max-width:720px){ .navlinks{display:none;} }
 
-  /* ---------- reveal ---------- */
   .reveal{
     opacity:0;
     transform:translateY(18px);
@@ -124,7 +121,6 @@
   }
   .reveal.in{opacity:1;transform:translateY(0);}
 
-  /* ---------- eyebrow / badge ---------- */
   .eyebrow{
     display:inline-flex;
     align-items:center;
@@ -156,7 +152,6 @@
     -webkit-text-fill-color:transparent;
   }
 
-  /* ---------- hero ---------- */
   .hero{
     padding:88px 0 96px;
     display:grid;
@@ -226,7 +221,6 @@
   .chip b{color:var(--ink); font-weight:600;}
   .chip .dot{width:6px;height:6px;border-radius:50%;background:#4ade80;box-shadow:0 0 6px #4ade80;}
 
-  /* ---------- portrait ---------- */
   .portrait-wrap{
     position:relative;
     display:flex;
@@ -284,7 +278,6 @@
     .portrait-card{max-width:220px;}
   }
 
-  /* ---------- section shell ---------- */
   section{padding:80px 0;}
   .section-head{
     max-width:640px;
@@ -303,7 +296,6 @@
     margin-top:12px;
   }
 
-  /* ---------- glass card base ---------- */
   .glass{
     background:var(--card);
     border:1px solid var(--card-border);
@@ -323,7 +315,6 @@
     opacity:.7;
   }
 
-  /* ---------- about ---------- */
   .about-grid{
     display:grid;
     grid-template-columns:1.3fr 1fr;
@@ -350,7 +341,6 @@
   .facts .fact .v{color:var(--ink);font-weight:600;text-align:right;}
   @media (max-width:760px){ .about-grid{grid-template-columns:1fr;} }
 
-  /* ---------- experience / projects timeline ---------- */
   .tl{position:relative;}
   .tl-item{
     position:relative;
@@ -453,7 +443,6 @@
   }
   .proj-link svg{width:14px;height:14px;}
 
-  /* ---------- skills console ---------- */
   .console{
     padding:0;
     border-radius:28px;
@@ -541,7 +530,6 @@
     .rail-btn{white-space:nowrap;}
   }
 
-  /* ---------- education / certs ---------- */
   .edu-card{
     display:flex;
     gap:28px;
@@ -587,7 +575,6 @@
   .cert-row .cert-icon svg{width:16px;height:16px;stroke:var(--primary);}
   .cert-row span{font-size:13.5px;color:#dbe1ec;font-weight:500;}
 
-  /* ---------- languages ---------- */
   .langs-row{
     display:flex;
     gap:14px;
@@ -601,7 +588,6 @@
   .lang-chip .lname{font-weight:700;font-size:14px;}
   .lang-chip .llevel{font-size:11px;color:var(--ink-light);margin-top:3px;font-family:'JetBrains Mono', monospace;}
 
-  /* ---------- contact / footer ---------- */
   .contact-card{
     padding:56px 44px;
     text-align:center;
@@ -705,7 +691,7 @@
         <div class="top-beam"></div>
         <div class="fact"><span class="k">Location</span><span class="v">India</span></div>
         <div class="fact"><span class="k">Focus</span><span class="v">GenAI · LLMs · RAG</span></div>
-        <div class="fact"><span class="k">Education</span><span class="v">B.TECH Information Technology</span></div>
+        <div class="fact"><span class="k">Education</span><span class="v">B.Tech in Information Technology</span></div>
         <div class="fact"><span class="k">Graduating</span><span class="v">Jun 2026</span></div>
         <div class="fact"><span class="k">Languages</span><span class="v">EN · HI · TA · TE</span></div>
       </div>
@@ -914,9 +900,9 @@
       <h2>Let's build something <span class="grad-text">intelligent</span>.</h2>
       <p>Open to entry-level Generative AI Engineer roles. Happy to walk through any project above in more depth, or talk through a problem you're working on.</p>
       <div class="contact-btns">
-        <a class="btn btn-primary" href="mailto:dharunkumar.engineer@gmail.com">✉ dharunkumar.engineer@gmail.com</a>
-        <a class="btn btn-ghost" href="tel:+919344355248">Call — +91 93443 55248</a>
-        <a class="btn btn-ghost" href="https://github.com/dharunkumar-engineer" target="_blank" rel="noopener">GitHub ↗</a>
+        <a class="btn btn-primary" href="mailto:dharunkumar.engineer@gmail.com">📧 dharunkumar.engineer@gmail.com</a>
+        <a class="btn btn-ghost" href="tel:+919344355248">📞 Call — +91 93443 55248</a>
+        <a class="btn btn-ghost" href="https://github.com/dharunkumar-engineer" target="_blank" rel="noopener">🔗 GitHub ↗</a>
       </div>
     </div>
   </div>
@@ -927,7 +913,6 @@
 </footer>
 
 <script>
-  // Reveal on scroll
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -939,7 +924,6 @@
   }, { threshold: 0.12 });
   revealEls.forEach(el => io.observe(el));
 
-  // Skills console
   const skillGroups = [
     { name: "Generative AI", items: ["LLMs","RAG","Prompt Engineering","Tool Calling","Semantic Search","Embeddings","Conversational AI","AI Agents","Agentic AI"] },
     { name: "Frameworks", items: ["LangChain","LangGraph","LlamaIndex","Hugging Face"] },
@@ -976,3 +960,4 @@
 
 </body>
 </html>
+
